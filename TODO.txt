@@ -1,0 +1,33 @@
+THE TROLLEHOLM PORT
+-adding  all the key features that trolleholm has...
+-and improving things where you can
+
+-port grids
+-fix scaling
+-html menus
+-transform the canvas
+-worms bombs
+
+PORT THE GRID SYSTEM
+-i have a simplified version of the grids that trolleholm uses implemented in javascript... this grids interface is difficult to translate because js arrays are much like python lists... theyre not like c arrays... but its key, to have grids like trolleholm, for the next game, so its worth implementing as much of the interface as trolleholm needs, and worth doing some r&d beyond that... into like what you can do with these grids
+
+FIXED SCALING
+-i want to add proper scaling, by 2x, 3x, etc. it would be good to do this soon, because... each new element i add, i'll want to test that it scales correctly and its easiest to do that for each thing when developing that thing, not all at the same time as the scaling.
+
+HTML MENUS
+-i need to add an escape menu, (settings, keybindings, etc), as well as a map menu, in the game. it would be good if these were html elements drawn over the top of the canvas
+
+-the 'map' menu probably needs to  export graphics from the canvas and draw them as an img element... so how to do that
+
+(note that this creates a problem where your html elements are immune to post-processing. so by making this decision, we might be making a constraint, that the game doesnt have post-processing on its text.)
+
+TRANSFORMING THE CANVAS
+- i need to be able to move the canvas around the screen... and have it carry all the associated html stuff with it... it seems like it could just be the parent for those elements.
+ 
+- then having those translating  and  scaling, i should be able to build an arcade machine type graphic that has the game within it... anyway this is the idea. the canvas in a nice frame
+ 
+- maybe scaling and rotating the 2d plane in 3d within the canvas...what can you do with this...
+
+WORMS STYLE BOMBS
+-an improved system for bombs.
+-this would need a total rework.

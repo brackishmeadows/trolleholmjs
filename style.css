@@ -1,0 +1,59 @@
+@font-face {
+  font-family: vollkorn;
+  src: url(fonts/VollkornRegular.otf);
+}
+@font-face {
+  font-family: johnf;
+  src: url(fonts/johnfsebastian.ttf);
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(20,10,10);
+}
+canvas {
+  display: block;
+  image-rendering: pixelated;
+  border: 3px solid rgb(10,10,20);
+  z-index: -1;
+}
+div{
+  margin: auto;
+  position:relative;
+  top: 30px;
+  width: 262px;
+}
+.divbg{
+  border:3px solid rgb(120,50,120);
+  background-color:rgb(120,50,120);
+}
+span{
+
+}
+.title{
+  position:absolute;
+  font-family:johnf;
+  color:rgb(120,50,120);
+  font-size:30px;
+  left: 18px;
+  top: 65px;
+  z-index:0;
+}
+
+.titleprompt{
+  position:absolute;
+  font-family:vollkorn;
+  color:rgb(90,120,84);
+  font-size:20px;
+  left: 102px;
+  top: 150px;
+}
+
+.byline{
+  position:absolute;
+  font-family:vollkorn;
+  color:rgb(50,100,64);
+  font-size:14px;
+  left: 44px;
+  top: 230px; 
+}
